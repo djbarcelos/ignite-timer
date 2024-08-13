@@ -54,7 +54,11 @@ export function Countdown() {
   const seconds = String(secondsAmount).padStart(2, '0')
 
   useEffect(() => {
-    if (activeCycle) document.title = `Timer - ${minutes}:${seconds}`
+    if (activeCycle) {
+      document.title = `Timer - ${minutes}:${seconds}`
+    } else {
+      document.title = `Timer - ${minutes}:${seconds}`
+    }
   }, [minutes, seconds, activeCycle])
 
   return (
