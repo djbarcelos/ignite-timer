@@ -7,7 +7,6 @@ import {
 } from 'react'
 import { Cycle, cycleReducer } from '../reducers/reducer'
 import {
-  ActionTypes,
   addNewCycleAction,
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
